@@ -549,9 +549,9 @@ pipeline {
             steps {
                 dir('JavaWebApp') {
                     sh """mvn sonar:sonar \
-                          -Dsonar.projectKey=JavaWebApplication \
-                          -Dsonar.host.url=http://3.110.171.226:9000 \
-                          -Dsonar.login=df3865db3dc59a7788c09e04fa03090c1e0c9f4f"""
+                             -Dsonar.projectKey=javawebapp \
+                             -Dsonar.host.url=http://44.203.191.7:9000 \
+                             -Dsonar.login=aefeb6898f4840ae49fe82e5ce86577476fe48fd"""
                 }
             }
         }
@@ -628,8 +628,8 @@ pipeline {
                 dir('JavaWebApp') {
                     sh """mvn sonar:sonar \
                              -Dsonar.projectKey=javawebapp \
-                             -Dsonar.host.url=http://52.54.148.89:9000 \
-                             -Dsonar.login=e52cbb49a92292fee674153e8fe61ebaf11c2134
+                             -Dsonar.host.url=http://44.203.191.7:9000 \
+                             -Dsonar.login=aefeb6898f4840ae49fe82e5ce86577476fe48fd"""
                 }
             }
         }
