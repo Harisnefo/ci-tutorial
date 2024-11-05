@@ -222,7 +222,7 @@ Use the following script in user-data
    #sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
    #sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
    sudo yum upgrade -y
-   sudo amazon-linux-extras install java-openjdk11 -y
+   sudo amazon-linux-extras install java-openjdk11 -y or sudo yum install -y java-17-amazon-corretto-devel
    sudo yum install jenkins -y
    sudo systemctl enable jenkins
    sudo systemctl start jenkins
